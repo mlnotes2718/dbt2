@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: fact_popular_destination
+    description: "Fact table popular destination by order."
+    columns:
+      - name: end_station_name
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
