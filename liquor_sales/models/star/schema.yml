@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_store
+    description: "Dimension table for store."
+    columns:
+      - name: store_number
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: dim_item
+    description: "Dimension table for item."
+    columns:
+      - name: item_number
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
